@@ -37,9 +37,8 @@ public class SampleController {
 		return sampleService.getDetails();
 	}
 
-	@PostMapping(value = "/sample/store/data")
+	@PostMapping(value = "/sample/data")
 	public Mono<SampleResponse> store(Mono<SampleRequest> request) {
 		return sampleService.store(request);
-
 	}
 }
